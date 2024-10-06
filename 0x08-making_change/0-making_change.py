@@ -3,6 +3,7 @@
 make change
 """
 
+
 def makeChange(coins, total):
     """
     make change
@@ -11,7 +12,6 @@ def makeChange(coins, total):
     if total <= 0:
         return 0
 
-    # Initialize the dp array where dp[i] is the minimum number of coins to make amount i
     dp = [float('inf')] * (total + 1)
     dp[0] = 0  # No coins are needed to make 0
 
